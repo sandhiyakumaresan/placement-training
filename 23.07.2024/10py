@@ -1,0 +1,7 @@
+10.
+num_english = int(input().strip())
+english_students = set(map(int, input().strip().split()))
+num_french = int(input().strip())
+french_students = set(map(int, input().strip().split()))
+common_students = english_students.intersection(french_students)
+print(len(common_students))
