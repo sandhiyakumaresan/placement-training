@@ -1,0 +1,9 @@
+11.
+a = int(input())
+b = int(input())
+integer_division = a // b
+modulo = a % b
+divmod_result = divmod(a, b)
+print(integer_division)
+print(modulo)
+print(divmod_result)
