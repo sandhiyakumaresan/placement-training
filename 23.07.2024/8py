@@ -1,0 +1,17 @@
+8.
+def can_stack_cubes(cubes):
+    while len(cubes) > 1:
+        if cubes[0] >= cubes[-1]:
+            if not cubes[0] <= cubes[1] or not cubes[0] <= cubes[-2]:
+                return "No"
+            cubes.pop(0)
+        else:
+            if not cubes[-1] <= cubes[0] or not cubes[-1] <= cubes[-2]:
+                return "No"
+            cubes.pop()
+    return "Yes"
+t = int(input().strip())
+for _ in range(t):
+    n = int(input().strip())
+    cubes = list(map(int, input().strip().split()))
+    print(can_stack_cubes(cubes))
