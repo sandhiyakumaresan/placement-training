@@ -1,0 +1,7 @@
+7.
+n = int(input().strip())
+english_subscribers = set(map(int, input().strip().split()))
+m = int(input().strip())
+french_subscribers = set(map(int, input().strip().split()))
+total_subscribers = english_subscribers.union(french_subscribers)
+print(len(total_subscribers))
