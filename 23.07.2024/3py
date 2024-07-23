@@ -1,0 +1,11 @@
+3.
+n = int(input().strip())
+s = set(map(int, input().strip().split()))
+num_commands = int(input().strip())
+for _ in range(num_commands):
+    command_line = input().strip().split()
+    command = command_line[0]
+    if command == "pop":
+        s.pop()
+    elif command == "remove":
+        value = int
