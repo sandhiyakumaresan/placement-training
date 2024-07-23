@@ -1,0 +1,7 @@
+15.
+num_english = int(input())
+english_subs = set(map(int, input().split()))
+num_french = int(input())
+french_subs = set(map(int, input().split()))
+symmetric_difference = english_subs.symmetric_difference(french_subs)
+print(len(symmetric_difference))
