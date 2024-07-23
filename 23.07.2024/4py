@@ -1,0 +1,16 @@
+4.
+from collections import deque
+n = int(input().strip())
+d = deque()
+for _ in range(n):
+    command = input().strip().split()
+    operation = command[0]
+    if operation == "append":
+        d.append(command[1])
+    elif operation == "appendleft":
+        d.appendleft(command[1])
+    elif operation == "pop":
+        d.pop()
+    elif operation == "popleft":
+        d.popleft()
+print(" ".join(d))
